@@ -14,7 +14,7 @@ class JobCompletedTableViewCell: UITableViewCell {
     @IBOutlet weak var beforeImageView: UIImageView!
     @IBOutlet weak var afterImageView: UIImageView!
     @IBOutlet weak var fullNameLabel: UILabel!
-    @IBOutlet weak var jobDescriptionLabel: UILabel!
+    @IBOutlet weak var jobTypeLabel: UILabel!
     @IBOutlet weak var jobDescriptionTextView: UITextView!
     @IBOutlet weak var distanceLabel: UILabel!
     

@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="337"/>
+            <point key="canvasLocation" x="-594" y="337"/>
         </scene>
         <!--Job Completed Table View Controller-->
         <scene sceneID="4Ii-Zo-kfG">
@@ -80,7 +80,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kto-JX-VnX">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB TYPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kto-JX-VnX">
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -136,8 +136,8 @@
                                     <outlet property="beforeImageView" destination="sv9-Pd-c5K" id="otM-em-ULU"/>
                                     <outlet property="distanceLabel" destination="K67-bm-6ED" id="M0y-dK-RL8"/>
                                     <outlet property="fullNameLabel" destination="YYy-Ws-DD7" id="T4s-bT-Q6B"/>
-                                    <outlet property="jobDescriptionLabel" destination="kto-JX-VnX" id="xz6-H7-rI3"/>
                                     <outlet property="jobDescriptionTextView" destination="fWn-zo-kq1" id="CG9-i1-l2W"/>
+                                    <outlet property="jobTypeLabel" destination="kto-JX-VnX" id="3XK-hr-A8o"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -149,7 +149,56 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aI8-D4-Bw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="337"/>
+            <point key="canvasLocation" x="182" y="337"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tc3-da-MX0">
+            <objects>
+                <viewController id="t2a-YA-O2s" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5nx-Vu-4N3"/>
+                        <viewControllerLayoutGuide type="bottom" id="snN-Mx-mfh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jKH-dw-d6C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3G-Ge-0r0">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="66o-9b-pA3">
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Job Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZE-Ru-QW9">
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="66o-9b-pA3" firstAttribute="width" secondItem="s3G-Ge-0r0" secondAttribute="width" id="2sY-Lp-1Tf"/>
+                                    <constraint firstAttribute="trailing" secondItem="66o-9b-pA3" secondAttribute="trailing" id="FxJ-bS-rV1"/>
+                                    <constraint firstItem="66o-9b-pA3" firstAttribute="top" secondItem="s3G-Ge-0r0" secondAttribute="top" id="kvL-nI-Nyg"/>
+                                    <constraint firstItem="66o-9b-pA3" firstAttribute="height" secondItem="s3G-Ge-0r0" secondAttribute="height" id="qSi-Pl-6ti"/>
+                                    <constraint firstAttribute="bottom" secondItem="66o-9b-pA3" secondAttribute="bottom" id="tc7-R3-RiE"/>
+                                    <constraint firstItem="66o-9b-pA3" firstAttribute="leading" secondItem="s3G-Ge-0r0" secondAttribute="leading" id="uyq-6h-UYu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s3G-Ge-0r0" firstAttribute="top" secondItem="5nx-Vu-4N3" secondAttribute="bottom" id="2jz-UT-32g"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="s3G-Ge-0r0" secondAttribute="bottom" id="C1o-xM-959"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s3G-Ge-0r0" secondAttribute="trailing" id="SVR-HX-GxK"/>
+                            <constraint firstItem="s3G-Ge-0r0" firstAttribute="leading" secondItem="jKH-dw-d6C" secondAttribute="leadingMargin" id="iDA-GP-iUR"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="900"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evU-pa-Kdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="336.43178410794604"/>
         </scene>
     </scenes>
 </document>

@@ -17,11 +17,11 @@ class JobCompletedTableViewController: UITableViewController {
         
         let beforeImg = UIImage(named: "defaultImage")!
         let afterImg = beforeImg
-        let job1 = JobCompleted(beforeImage: beforeImg, afterImage: afterImg, fullName: "Edward Lim", jobDescriptionLabel: "Oak Trees", jobDescription: "Prune and trimmed the oak trees", distance: "0.7 miles")!
+        let job1 = JobCompleted(beforeImage: beforeImg, afterImage: afterImg, fullName: "Edward Lim", jobType: "Oak Trees", jobDescription: "Prune and trimmed the oak trees", distance: "0.7 miles")!
         
-        let job2 = JobCompleted(beforeImage: beforeImg, afterImage: afterImg, fullName: "Edward Lim", jobDescriptionLabel: "Palm Trees", jobDescription: "Prune and trimmed the palm trees", distance: "0.7 miles")!
+        let job2 = JobCompleted(beforeImage: beforeImg, afterImage: afterImg, fullName: "Edward Lim", jobType: "Palm Trees", jobDescription: "Prune and trimmed the palm trees", distance: "0.7 miles")!
         
-        let job3 = JobCompleted(beforeImage: beforeImg, afterImage: afterImg, fullName: "Edward Lim", jobDescriptionLabel: "Deodar Trees", jobDescription: "Prune and trimmed the deodar cedar trees", distance: "0.8 miles")!
+        let job3 = JobCompleted(beforeImage: beforeImg, afterImage: afterImg, fullName: "Edward Lim", jobType: "Deodar Trees", jobDescription: "Prune and trimmed the deodar cedar trees", distance: "0.8 miles")!
         
 //        jobsCompleted += [job1, job2, job3]
         jobsCompleted.append(job1)
@@ -64,7 +64,7 @@ class JobCompletedTableViewController: UITableViewController {
         cell.beforeImageView.image = job.beforeImage
         cell.afterImageView.image = job.afterImage
         cell.fullNameLabel.text = job.fullName
-        cell.jobDescriptionLabel.text = job.jobDescriptionLabel
+        cell.jobTypeLabel.text = job.jobType
         cell.jobDescriptionTextView.text = job.jobDescription
         cell.distanceLabel.text = job.distance
 

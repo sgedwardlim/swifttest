@@ -14,21 +14,21 @@ class JobCompleted {
     var beforeImage: UIImage
     var afterImage: UIImage
     var fullName: String
-    var jobDescriptionLabel: String
+    var jobType: String
     var jobDescription: String
     var distance: String
     
     init?(beforeImage: UIImage,
           afterImage: UIImage,
           fullName: String,
-          jobDescriptionLabel: String,
+          jobType: String,
           jobDescription: String,
           distance: String)
     {
         self.beforeImage = beforeImage
         self.afterImage = afterImage
         self.fullName = fullName
-        self.jobDescriptionLabel = jobDescriptionLabel
+        self.jobType = jobType
         self.jobDescription = jobDescription
         self.distance = distance
     }
