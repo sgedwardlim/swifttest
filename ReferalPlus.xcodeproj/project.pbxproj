@@ -17,6 +17,9 @@
 		2B5776641DB15F6F0067E0E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5776631DB15F6F0067E0E6 /* Assets.xcassets */; };
 		2B5776671DB15F6F0067E0E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5776651DB15F6F0067E0E6 /* LaunchScreen.storyboard */; };
 		2B5776721DB15F6F0067E0E6 /* ReferalPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5776711DB15F6F0067E0E6 /* ReferalPlusTests.swift */; };
+		2B96446F1DB6EDD00081F3EE /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96446E1DB6EDD00081F3EE /* Job.swift */; };
+		2B9644701DB6EDD00081F3EE /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96446E1DB6EDD00081F3EE /* Job.swift */; };
+		2B9644721DB6EECE0081F3EE /* JobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9644711DB6EECE0081F3EE /* JobViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,8 @@
 		2B57766D1DB15F6F0067E0E6 /* ReferalPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReferalPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5776711DB15F6F0067E0E6 /* ReferalPlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferalPlusTests.swift; sourceTree = "<group>"; };
 		2B5776731DB15F6F0067E0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B96446E1DB6EDD00081F3EE /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		2B9644711DB6EECE0081F3EE /* JobViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,8 @@
 				2B3B3B741DB592EE00492342 /* JobCompletedTableViewController.swift */,
 				2B3B3B721DB5906200492342 /* JobCompletedTableViewCell.swift */,
 				2B3B3B761DB5934A00492342 /* JobCompleted.swift */,
+				2B9644711DB6EECE0081F3EE /* JobViewController.swift */,
+				2B96446E1DB6EDD00081F3EE /* Job.swift */,
 				2B57767C1DB15F7F0067E0E6 /* Supporting Files */,
 			);
 			path = ReferalPlus;
@@ -218,6 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3B3B731DB5906200492342 /* JobCompletedTableViewCell.swift in Sources */,
+				2B9644721DB6EECE0081F3EE /* JobViewController.swift in Sources */,
+				2B96446F1DB6EDD00081F3EE /* Job.swift in Sources */,
 				2B57765F1DB15F6F0067E0E6 /* ViewController.swift in Sources */,
 				2B57765D1DB15F6F0067E0E6 /* AppDelegate.swift in Sources */,
 				2B3B3B751DB592EE00492342 /* JobCompletedTableViewController.swift in Sources */,
@@ -230,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5776721DB15F6F0067E0E6 /* ReferalPlusTests.swift in Sources */,
+				2B9644701DB6EDD00081F3EE /* Job.swift in Sources */,
 				2B3B3B781DB5934A00492342 /* JobCompleted.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
