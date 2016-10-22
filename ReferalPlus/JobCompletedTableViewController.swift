@@ -12,6 +12,7 @@ class JobCompletedTableViewController: UITableViewController {
 
     // MARK: Properties
     var jobsCompleted = [JobCompleted]()
+    var emailRecipient :String?
     
     func loadSampleData() {
         
@@ -27,6 +28,8 @@ class JobCompletedTableViewController: UITableViewController {
         jobsCompleted.append(job1)
         jobsCompleted.append(job2)
         jobsCompleted.append(job3)
+        
+        print("user email: " + emailRecipient!)
         
     }
     

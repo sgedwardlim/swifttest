@@ -89,8 +89,8 @@
 		2B57765B1DB15F6F0067E0E6 /* ReferalPlus */ = {
 			isa = PBXGroup;
 			children = (
-				2B57765E1DB15F6F0067E0E6 /* ViewController.swift */,
 				2B5776601DB15F6F0067E0E6 /* Main.storyboard */,
+				2B57765E1DB15F6F0067E0E6 /* ViewController.swift */,
 				2B3B3B741DB592EE00492342 /* JobCompletedTableViewController.swift */,
 				2B3B3B721DB5906200492342 /* JobCompletedTableViewCell.swift */,
 				2B3B3B761DB5934A00492342 /* JobCompleted.swift */,
