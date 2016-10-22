@@ -27,9 +27,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: Segueing
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let jobCompletedViewController = segue.destination as! JobCompletedTableViewController
-        jobCompletedViewController.emailRecipient = recipientEmailTextField.text
+
+        if segue.identifier == "prepareReferalSegue" {
+            if let navController = segue.destination as? UINavigationController {
+                if let viewController = navController.topViewController as? JobCompletedTableViewController {
+                    viewController.emailRecipient = recipientEmailTextField.text
+                }
+            }
+            
+        }
+
     }
 
 }

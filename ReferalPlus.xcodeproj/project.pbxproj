@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2B3B3B731DB5906200492342 /* JobCompletedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3B3B721DB5906200492342 /* JobCompletedTableViewCell.swift */; };
 		2B3B3B751DB592EE00492342 /* JobCompletedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3B3B741DB592EE00492342 /* JobCompletedTableViewController.swift */; };
-		2B3B3B771DB5934A00492342 /* JobCompleted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3B3B761DB5934A00492342 /* JobCompleted.swift */; };
-		2B3B3B781DB5934A00492342 /* JobCompleted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3B3B761DB5934A00492342 /* JobCompleted.swift */; };
 		2B57765D1DB15F6F0067E0E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57765C1DB15F6F0067E0E6 /* AppDelegate.swift */; };
 		2B57765F1DB15F6F0067E0E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B57765E1DB15F6F0067E0E6 /* ViewController.swift */; };
 		2B5776621DB15F6F0067E0E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5776601DB15F6F0067E0E6 /* Main.storyboard */; };
@@ -35,7 +33,6 @@
 /* Begin PBXFileReference section */
 		2B3B3B721DB5906200492342 /* JobCompletedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCompletedTableViewCell.swift; sourceTree = "<group>"; };
 		2B3B3B741DB592EE00492342 /* JobCompletedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCompletedTableViewController.swift; sourceTree = "<group>"; };
-		2B3B3B761DB5934A00492342 /* JobCompleted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCompleted.swift; sourceTree = "<group>"; };
 		2B5776591DB15F6F0067E0E6 /* ReferalPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReferalPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B57765C1DB15F6F0067E0E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B57765E1DB15F6F0067E0E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +90,6 @@
 				2B57765E1DB15F6F0067E0E6 /* ViewController.swift */,
 				2B3B3B741DB592EE00492342 /* JobCompletedTableViewController.swift */,
 				2B3B3B721DB5906200492342 /* JobCompletedTableViewCell.swift */,
-				2B3B3B761DB5934A00492342 /* JobCompleted.swift */,
 				2B9644711DB6EECE0081F3EE /* JobViewController.swift */,
 				2B96446E1DB6EDD00081F3EE /* Job.swift */,
 				2B57767C1DB15F7F0067E0E6 /* Supporting Files */,
@@ -230,7 +226,6 @@
 				2B57765F1DB15F6F0067E0E6 /* ViewController.swift in Sources */,
 				2B57765D1DB15F6F0067E0E6 /* AppDelegate.swift in Sources */,
 				2B3B3B751DB592EE00492342 /* JobCompletedTableViewController.swift in Sources */,
-				2B3B3B771DB5934A00492342 /* JobCompleted.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +235,6 @@
 			files = (
 				2B5776721DB15F6F0067E0E6 /* ReferalPlusTests.swift in Sources */,
 				2B9644701DB6EDD00081F3EE /* Job.swift in Sources */,
-				2B3B3B781DB5934A00492342 /* JobCompleted.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

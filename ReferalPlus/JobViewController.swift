@@ -15,14 +15,25 @@ class JobViewController: UIViewController, UINavigationControllerDelegate, UIIma
     @IBOutlet weak var jobDescriptionTextView: UITextView!
     @IBOutlet weak var beforeImageView: UIImageView!
     @IBOutlet weak var afterImageView: UIImageView!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    // Keeps tracks of which image the user interacts with (before or after)
     var imageTypeSelected: ImageType = .before
     
+    var job: Job?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         createJobDescriptionBorder()
+        
+        if (job != nil) {
+            
+            jobTypeTextField.text = job?.jobType
+            jobDescriptionTextView.text = job?.jobDescription
+            beforeImageView.image = job?.beforeImage
+            afterImageView.image = job?.afterImage
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,15 +42,34 @@ class JobViewController: UIViewController, UINavigationControllerDelegate, UIIma
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if sender as AnyObject? === saveButton {
+            
+            let name = jobTypeTextField.text ?? ""
+            let jobDescription = jobDescriptionTextView.text ?? ""
+            let beforeImage = beforeImageView.image!
+            let afterImage = afterImageView.image!
+            
+            // If job is not nil, it was passed from JobCompleteTableViewController
+            if let job = self.job {
+                // Leave all other values intact but modify new values of job
+                job.jobType = name
+                job.jobDescription = jobDescription
+                job.beforeImage = beforeImage
+                job.afterImage = afterImage
+            } else {
+                // Create a new instance of Job, User clicked on Add Button
+                job = Job(jobType: name, jobDescription: jobDescription, beforeImage: beforeImage, afterImage: afterImage)
+            }
+
+        }
     }
-    */
+ 
     
     // MARK: UINavigationControllerDelegate
     
