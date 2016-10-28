@@ -74,6 +74,42 @@ class JobCompletedTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+//        var addToListAction = UITableViewRowAction(style: .normal, title: "Add to list") { (UITableViewRowAction, IndexPath) in
+//            
+//            let activityItem = self.jobsCompleted[indexPath.row]
+//            let activityViewController = UIActivityViewController(activityItems: [activityItem], applicationActivities: nil)
+//            self.present(activityViewController, animated: true, completion: nil)
+//        }
+//        
+//        addToListAction.backgroundColor = UIColor.blue
+//        
+//        return [addToListAction]
+        
+        
+        
+        let more = UITableViewRowAction(style: .normal, title: "More") { action, index in
+            print("more button tapped \(indexPath.row)")
+        }
+        more.backgroundColor = UIColor.lightGray
+        
+        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { action, index in
+            print("favorite button tapped \(indexPath.row)")
+        }
+        favorite.backgroundColor = UIColor.orange
+        
+        let share = UITableViewRowAction(style: .normal, title: "Share") { action, index in
+            print("share button tapped \(indexPath.row)")
+        }
+        share.backgroundColor = UIColor.blue
+        
+        return [share, favorite, more]
+    }
+    
     
     /*
      // Override to support conditional editing of the table view.

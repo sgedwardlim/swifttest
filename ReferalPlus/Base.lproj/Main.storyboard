@@ -81,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="192"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T4v-o1-Gea" id="Na6-bJ-4T9">
-                                    <frame key="frameInset" width="375" height="191.5"/>
+                                    <frame key="frameInset" width="375" height="191"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FULL NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYy-Ws-DD7">
@@ -167,18 +167,6 @@
         <!--Job Details-->
         <scene sceneID="Tc3-da-MX0">
             <objects>
-                <tapGestureRecognizer id="M0e-ft-OBT">
-                    <connections>
-                        <action selector="selectAfterPhotoFromPhotoLibrary:" destination="t2a-YA-O2s" id="gt5-Cz-ES6"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="evU-pa-Kdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="nbY-g1-6OH" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="ojY-xO-W6e">
-                    <connections>
-                        <action selector="selectBeforePhotoFromPhotoLibrary:" destination="t2a-YA-O2s" id="BZq-D3-Q8d"/>
-                    </connections>
-                </tapGestureRecognizer>
                 <viewController id="t2a-YA-O2s" customClass="JobViewController" customModule="ReferalPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5nx-Vu-4N3"/>
@@ -192,6 +180,11 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMC-bI-3Br">
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2l-bI-QMI">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="248" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Oak Tree" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3U6-AB-pKB">
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -216,11 +209,6 @@
                                                     <outletCollection property="gestureRecognizers" destination="ojY-xO-W6e" appends="YES" id="IFx-l3-qmX"/>
                                                 </connections>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2l-bI-QMI">
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="SR5-ph-ckv">
                                                 <gestureRecognizers/>
                                                 <connections>
@@ -286,8 +274,20 @@
                         <outlet property="saveButton" destination="1cw-hS-I0X" id="ptB-NS-6Rw"/>
                     </connections>
                 </viewController>
+                <tapGestureRecognizer id="M0e-ft-OBT">
+                    <connections>
+                        <action selector="selectAfterPhotoFromPhotoLibrary:" destination="t2a-YA-O2s" id="gt5-Cz-ES6"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evU-pa-Kdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nbY-g1-6OH" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="ojY-xO-W6e">
+                    <connections>
+                        <action selector="selectBeforePhotoFromPhotoLibrary:" destination="t2a-YA-O2s" id="BZq-D3-Q8d"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2649" y="411"/>
+            <point key="canvasLocation" x="1974" y="425"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UZN-Bt-2hP">
@@ -307,29 +307,8 @@
             </objects>
             <point key="canvasLocation" x="188" y="389.95502248875567"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="fYn-O2-yh8">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xrs-Ip-hhh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jV0-KA-42a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="t2a-YA-O2s" kind="relationship" relationship="rootViewController" id="Z0S-Pt-Odr"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pTP-uB-fn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1884" y="773"/>
-        </scene>
     </scenes>
     <resources>
         <image name="defaultImage" width="320" height="320"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="8Nu-r4-GsU"/>
-    </inferredMetricsTieBreakers>
 </document>
